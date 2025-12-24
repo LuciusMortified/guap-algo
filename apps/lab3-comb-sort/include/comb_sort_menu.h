@@ -155,9 +155,7 @@ struct comb_sort_menu {
     }
 
     int run() {
-        for (int i = 0; i < 100; i++) {
-            seq_.push_back(std::rand() % 100);
-        }
+        seq_ = {9, 1, 8, 2, 7, 3, 6, 4, 5, 0};
 
         print_menu_();
         while (is_running_) {
